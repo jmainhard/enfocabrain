@@ -37,7 +37,7 @@ If you don't see your device's address, this indicates that there is a problem w
 
 
 ## Usage
-To start enfocabrain automatically when the RP is booted write this to `/etc/rc.local` (replace the path with the actual one where you cloned the repo)
+To start enfocabrain automatically when the RP is booted write this to `/etc/rc.local` before `exit 0` (replace the path with the actual one where you cloned the repo)
 
     sleep 10
     python3 /home/equipo1/enfocabrain/read_mindwave_mobile.py  > /home/equipo1/enfocabrain/mindwave.log 2>&1 &
